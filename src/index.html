@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To Do List</title>
+    <link rel="stylesheet" href="./app.css">
+</head>
+
+<body class="bg-stone-200">
+    <main class="max-w-[400px] bg-white mx-auto p-8 mt-10 min-h-[450px]">
+        <header class="mb-5">
+            <h1 class="text-3xl font-serif font-bold text-center">Task Lists</h1>
+        </header>
+        <!-- To do new -->
+        <section>
+            <div class="flex justify-between">
+                <input type="text" id="inputTask"
+                    class="font-mono flex-grow border border-stone-950 focus-visible:outline-none ps-3">
+                <button id="addTaskList" class="bg-stone-900 text-white size-9 flex justify-center items-center">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                        stroke="currentColor" class="w-6 h-6">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M12 4.5v15m7.5-7.5h-15" />
+                    </svg>
+                </button>
+            </div>
+            <div class="flex justify-between mt-3">
+                <h3 class="font-bold font-serif text-xl">Your List</h3>
+                <div class="bg-stone-950 text-white rounded rounded-full px-5 text-sm flex items-center">
+                    <span id="taskDoneTotal">0</span>
+                    <span>/</span>
+                    <span id="taskTotal">0</span>
+                </div>
+            </div>
+        </section>
+        <!-- List you must to do -->
+        <section>
+            <div id="listGroup">
+                <div class="last:block hidden mt-10">
+                    <div class="flex flex-col justify-center items-center">
+                        <img src="./img/empty.svg" class="w-32" alt="">
+                        <h4>There is no Tasks.</h4>
+                    </div>
+                </div>
+                
+            </div>
+        </section>
+    </main>
+
+
+    <script src="./app.js"></script>
+</body>
+
+</html>
